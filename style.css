@@ -17,21 +17,35 @@ body {
 }
 .Navbar {
   background-color: var(--main-collor);
-  padding: 10px;
+  padding: 0px 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 2px solid var(--alternative-collor);
+  z-index: 9999;
 }
 .div-logo  {
-
   display: flex;
+  align-items: center;
 }
 .nav-list {
   display: flex;
+  align-items: center;
+  font-family: var(--font);
   gap: 3rem;
 }
+.nav-list li a{
+  color: var(--second-collor);
+  transition: 0.5s;
+}
 .div-logo a{
-  margin-bottom: 0;
-  background-color: red;
   font-family: var(--font);
+  color: var(--second-collor);
+  
+}
+
+.nav-list a:hover{
+  background-color: #0c0e0f;
+padding: 5px;
+border-radius: 15px;
 }
