@@ -2,7 +2,11 @@
   --main-collor: #294dfa;
   --second-collor: #f2f0ec;
   --alternative-collor: #0c0e0f;
-  --font: "outfit", sans-serif;
+  --font-main: "Roboto+Flex", sans-serif;
+  --font-alternative : "Outfit", sans-serif;
+  --fw-normal:600;
+  --fw-bold:700;
+  --fw-ekstra:900;
 }
 
 * {
@@ -31,21 +35,25 @@ body {
 .nav-list {
   display: flex;
   align-items: center;
-  font-family: var(--font);
+  font-family: var(--font-alternative);
+  font-weight: var(--fw-normal);
   gap: 3rem;
+  margin-right: 45px;
 }
 .nav-list li a{
   color: var(--second-collor);
   transition: 0.5s;
 }
 .div-logo a{
-  font-family: var(--font);
+  font-family: var(--font-alternative);
   color: var(--second-collor);
+  font-weight: var(--fw-normal);
   
 }
 
 .nav-list a:hover{
-  background-color: #0c0e0f;
+ background-color: #0c0e0f;
 padding: 5px;
 border-radius: 15px;
 }
+
