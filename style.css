@@ -3,10 +3,10 @@
   --second-collor: #f2f0ec;
   --alternative-collor: #0c0e0f;
   --font-main: "Roboto+Flex", sans-serif;
-  --font-alternative : "Outfit", sans-serif;
-  --fw-normal:600;
-  --fw-bold:700;
-  --fw-ekstra:900;
+  --font-alternative: "Outfit", sans-serif;
+  --fw-normal: 600;
+  --fw-bold: 700;
+  --fw-ekstra: 900;
 }
 
 * {
@@ -17,10 +17,9 @@
   list-style: none;
 }
 body {
-  background-color: var(--second-collor);
+  background-color: var(--main-collor);
 }
 .Navbar {
-  background-color: var(--main-collor);
   padding: 0px 10px;
   display: flex;
   justify-content: space-between;
@@ -28,7 +27,7 @@ body {
   border-bottom: 2px solid var(--alternative-collor);
   z-index: 9999;
 }
-.div-logo  {
+.div-logo {
   display: flex;
   align-items: center;
 }
@@ -40,20 +39,35 @@ body {
   gap: 3rem;
   margin-right: 45px;
 }
-.nav-list li a{
+.nav-list li a {
   color: var(--second-collor);
   transition: 0.5s;
 }
-.div-logo a{
+.div-logo a {
   font-family: var(--font-alternative);
   color: var(--second-collor);
   font-weight: var(--fw-normal);
-  
 }
 
-.nav-list a:hover{
- background-color: #0c0e0f;
-padding: 5px;
-border-radius: 15px;
+.nav-list a:hover {
+  padding: 5px;
+  border-radius: 15px;
+  border: 2px solid var(--alternative-collor);
 }
+main {
+  font-family: var(--font-alternative);
+
+  display: flex;
+}
+.intro-main{
+  padding: 200px 100px  ; 
+}
+.intro-main h1{
+  font-size: 150px;
+}
+.intro-main p{
+  font-size: 50px;
+ padding-left: 25px;
+}
+
 
