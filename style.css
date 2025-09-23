@@ -26,10 +26,11 @@ body {
   align-items: center;
   border-bottom: 2px solid var(--alternative-collor);
   z-index: 9999;
+  padding: 10px;
 }
 .div-logo {
   display: flex;
-  align-items: center;
+  align-items: center;  
 }
 .nav-list {
   display: flex;
@@ -38,6 +39,7 @@ body {
   font-weight: var(--fw-normal);
   gap: 3rem;
   margin-right: 45px;
+  
 }
 .nav-list li a {
   color: var(--second-collor);
@@ -47,6 +49,7 @@ body {
   font-family: var(--font-alternative);
   color: var(--second-collor);
   font-weight: var(--fw-normal);
+  margin-left: 10px;
 }
 
 .nav-list a:hover {
@@ -56,7 +59,6 @@ body {
 }
 main {
   font-family: var(--font-alternative);
-
   display: flex;
 }
 .intro-main{
@@ -64,10 +66,23 @@ main {
 }
 .intro-main h1{
   font-size: 150px;
+  
 }
 .intro-main p{
   font-size: 50px;
  padding-left: 25px;
+ padding-bottom: 10px;
 }
 
+.intro-main a{
+color: var(--second-collor);
+border: 2px solid var(--alternative-collor);
+border-radius: 15px;
+padding: 5px;
+margin-left: 20px;
+transition: 0.5s;
+}
+.intro-main a:hover{
+font-size: 20px
+}
 
