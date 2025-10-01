@@ -97,7 +97,7 @@ main {
   width: 520px;
   height: 300px;
   overflow: hidden;
-  border: 2px solid var(--alternative-collor);
+  border: 2px solid var(--second); 
   border-radius: 10px;
   margin-right: 200px;
 }
@@ -134,22 +134,31 @@ main {
 }
 
 .main-artikel {
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
   background-color: #f2f0ec;
   height: 1000px;
   font-family: var(--font-main);
+  position: relative;
+  width: 100%;
+  overflow: hidden;
 }
+
 .card-section {
   display: flex;
-  justify-content: center;
-  align-items: center;
+ flex-direction: column;
   gap: 50px;
-  padding-top: 50px;
+  align-items: start;
+  height: 750px;
+  /*   */
+  margin-top: 100px;
+  position: absolute;
+  margin-left: 100px;
+
 }
 .card-1, .card-2, .card-3 {
-  width: 300px;
-  height: 500px;
+  width: 400px;
+  height: 200px;
   background-image: url(../FOTO/20250904_201705.jpg);
   border-radius: 15px;
   color: var(--second-collor);
@@ -159,4 +168,10 @@ main {
   font-size: 30px;
   font-weight: var(--fw-bold);
   background-size: cover;
+  box-shadow: 0 10px 20px 0 rgba(0,  0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.intro-artikel {
+  text-align: center;
+  padding-top: 50px;
 }
