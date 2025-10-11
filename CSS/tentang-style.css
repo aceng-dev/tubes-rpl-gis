@@ -1,0 +1,23 @@
+body{
+    background-color: var(--main-dark);
+}
+.carousel-item img {
+  height: 100vh;       /* batasi tinggi */
+  object-fit: contain;  
+  
+}
+.cover{
+  .carousel-item img {
+  height:92.2vh;       /* batasi tinggi */
+  object-fit: cover;  
+  position: relative;
+ 
+}
+}
+.tree-orang{
+ 
+position: absolute;
+top: 0;
+  width: 100%;
+ margin-top: 2px;
+}

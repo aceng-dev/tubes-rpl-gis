@@ -1,0 +1,114 @@
+body {
+  background-color: var(--main-collor);
+  
+}
+main {
+  font-family: var(--font-alternative);
+
+}
+.intro-main {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 1000;
+  color: var(--alternative-collor);
+  align-items: center;
+  width: 100%;
+  margin-top: 100px;
+}
+.carousel-item img {
+  height:800px;       /* batasi tinggi */
+  object-fit: cover;  
+}
+.glass-efek {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-top: 50px;
+}
+.intro-main h1 {
+  font-size: 200px;
+}
+.intro-main p {
+  font-size: 20px;
+  padding-left: 25px;
+  padding-bottom: 10px;
+
+}
+
+.intro-main a {
+  font-size: 20px;
+  color: var(--second-collor);
+  border: 2px solid var(--alternative-collor);
+  border-radius: 15px;
+  padding: 5px;
+  margin-left: 20px;
+  transition: 0.5s;
+}
+.intro-main a:hover {
+  background-color: #0c0e0f;
+}
+
+.main-artikel {
+  /* border-top-left-radius: 50px;
+  border-top-right-radius: 50px; */
+  background-color: white;
+  height: 900px;
+  font-family: var(--font-main);
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.card-img-top{
+   max-height: 400px;   
+    object-fit: contain;
+    padding: 10px; 
+}
+
+.intro-artikel {
+  text-align: center;
+  padding-top: 50px;
+}
+.intro-artikel h4 {
+  font-size: 30px;
+  font-weight: var(--fw-normal);
+  margin-bottom: 10px;
+}
+.intro-artikel p {
+  font-size: 20px;
+  color: var(--alternative-collor);
+  /* width: 50%; */
+  margin: auto;
+}
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+ .glass-efek {
+    margin-top: 200px;
+   
+  }
+  .intro-main h1 {
+    font-size: 50px;
+  }
+  .intro-main p {
+    font-size: 15px;
+    padding-left: 0px;
+    padding-bottom: 10px;
+  }
+
+  .intro-main a {
+    font-size: 15px;
+    margin-left: 0px;
+  }
+  
+  .main-artikel {
+    height: auto;
+  }
+}

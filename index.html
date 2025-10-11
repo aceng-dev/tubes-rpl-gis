@@ -4,9 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TechZone</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
     <!-- INI LOGO TECHZONE -->
-    <link rel="icon" href="../FOTO/FIX LOGO.png" type="jpg/png"/> 
-<!-- EKSPORT FONT -->
+    <link rel="icon" href="../FOTO/FIX LOGO.png" type="jpg/png" />
+    <!-- EKSPORT FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,67 +22,138 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
       rel="stylesheet"
-    />  
-    <link rel="stylesheet" href="../CSS/style.css"/>
+    />
+    <link rel="stylesheet" href="../CSS/index-style.css" />
+    <link rel="stylesheet" href="../CSS/global-style.css" />
   </head>
   <!-- BODY -->
   <body>
     <!-- INI NAVBAR  -->
     <nav class="Navbar">
       <div class="div-logo">
-        <img
-          src="../FOTO/FIX LOGO.png"
-          alt="logo techzone"
-          width="30vw"
-        />
+        <img src="../FOTO/FIX LOGO.png" alt="logo techzone" width="30vw" />
         <a href="#">TechZone</a>
       </div>
-      <ul class="nav-list">
-        <li><a href="#" class="active">Beranda</a></li>
-        <li><a href="tes2.html">Tentang Kita</a></li>
-        <li><a href="tes.html">Peta</a></li>
-        <li><a href="#">Kategori</a></li>
-      </ul>
-      
+      <button
+        class="btn btn-outline-primary d-md-none"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navMenu"
+        aria-controls="navMenu"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        ☰
+      </button>
+      <div class="collapse d-md-flex" id="navMenu">
+        <ul class="nav-list">
+          <li><a href="index.html" class="active">Beranda</a></li>
+          <li><a href="tentang.html" >Tentang Kita</a></li>
+          <li><a href="tes.html">Peta</a></li>
+          <li><a href="#">Kategori</a></li>
+        </ul>
+      </div>
     </nav>
+
     <!-- INI NAVBAR AKHIR -->
- 
+
     <!-- INI ISI NYA -->
     <main>
       <section class="intro-main">
-        <h1>TechZone</h1>
-      <p>Peta Pintar untuk Belanja Gadget Cerdas.</p>
-      <a href="tes.html">Coba Peta</a>
+        <div class="glass-efek">
+
+          <h1>TechZone</h1>
+          <p>Peta Pintar untuk Belanja Gadget Cerdas.</p>
+          <a href="tes.html">Coba Peta</a>
+        </div>
       </section>
-      <section class="slides-main">
-       <div class="slider-main">
-         <img src="../FOTO/20250904_204230.jpg" alt="gambar toko">
-        <img src="../FOTO/20250904_201705.jpg" alt="gambar toko">
-        <img src="../FOTO/20250904_211119.jpg" alt="gambar toko">
-       </div>
-      </section>
-      
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="FOTO/20250904_201705.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="FOTO/20250904_204230.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="FOTO/20250904_211119.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+</div>
     </main>
     <article class="main-artikel">
       <section class="intro-artikel">
-        <h4>
-          Apa Saja Yang Bisa Kamu Temukan di TechZone?
-        </h4>
+        <h4>Apa Saja Yang Bisa Kamu Temukan di TechZone?</h4>
         <p>
-          “WebGIS ini menampilkan persebaran toko handphone dan laptop berdasarkan brand dominan yang dijual, <br>seperti Samsung, Oppo, Asus, Lenovo, dan lainnya. Sistem ini membantu pengguna menemukan toko sesuai preferensi brand di wilayah Kota X.”
+          Temukan Dan Jelajahi Berbagai Toko Elektronik Terdekat dengan Mudah.
         </p>
       </section>
-      <section class="card-section">
-        <div class="card-1">ajay</div>
-        <div class="card-2">anjay</div>
-        <div class="card-3">anjay</div>
-      </section>
-      </article>
-     <!-- INI batas isinya -->
-<!-- ini footer -->
- <footer>
-  
- </footer>
- <!-- ini batas footer -->
+
+      <div class="container text-center mt-5">
+        <div class="row align-items-center">
+          <div class="col-md-4">
+            <div class="card h-100">
+              <img src="/FOTO/card1.png" class="card-img-top" alt=".icon" />
+              <div class="card-body">
+                <p class="card-text">Buka Di Device Apapun</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100">
+              <img src="/FOTO/card2.png" class="card-img-top" alt=".icon" />
+              <div class="card-body">
+                <p class="card-text">Peta Interaktif</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100">
+              <img src="/FOTO/card3.png" class="card-img-top" alt=".icon" />
+              <p>Temukan Brand Yang Ingin Anda cari</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- INI batas isinya -->
+    <!-- ini footer -->
+    <footer class="bg-primary text-light py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h5>About Us</h5>
+            <p>
+              Kami menyediakan layanan desain untuk UMKM, pelajar, dan
+              perusahaan.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h5>Links</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-light text-decoration-none">Home</a>
+              </li>
+              <li>
+                <a href="#" class="text-light text-decoration-none">Services</a>
+              </li>
+              <li>
+                <a href="#" class="text-light text-decoration-none">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h5>Contact</h5>
+            <p>Email: designajadulu@example.com</p>
+            <p>Ins</p>
+          </div>
+        </div>
+        <hr class="border-light" />
+        <p class="text-center mb-0">&copy; 2025 TechZone Kelompok 3</p>
+      </div>
+    </footer>
+
+    <!-- ini batas footer -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
