@@ -7,8 +7,8 @@
   --fw-normal: 600;
   --fw-bold: 700;
   --fw-ekstra: 900;
-  --main-light: #7a91fa; /* lebih terang */
-  --main-dark: #1d37b8; /* lebih gelap */
+  --main-light: #7a91fa; 
+  --main-dark: #1d37b8; 
 }
 
 * {
@@ -101,5 +101,5 @@ a {
 }
 .footer-custom {
   background: url("") no-repeat center center;
-  background-size: cover;   /* biar gambar full */
+  background-size: cover;  
 }

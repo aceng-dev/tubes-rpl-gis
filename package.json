@@ -1,0 +1,25 @@
+{
+  "name": "tubes-rpl-dan-gis",
+  "version": "1.0.0",
+  "description": "",
+  "main": "map.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aceng-dev/tubes-rpl-gis.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aceng-dev/tubes-rpl-gis/issues"
+  },
+  "homepage": "https://github.com/aceng-dev/tubes-rpl-gis#readme",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.75.0",
+    "leaflet": "^1.9.4",
+    "vite": "^7.1.10"
+  }
+}
